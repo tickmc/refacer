@@ -1,0 +1,50 @@
+<link rel="import"
+        href="../bower_components/polymer/polymer.html">
+
+<link rel="import"
+        href="../bower_components/video-webcam/video-webcam.html">
+
+<polymer-element name="app-main">
+
+  <template>
+   <video-webcam id="stream"
+                 autoStart
+                 noAudio
+                 mirrorX
+                 resolution="high"
+                 grayScale
+                 fit>
+
+
+   </video-webcam>
+
+   <div layout horizontal center fit>
+
+      <img id="overlay" src="/assets/overlays/{{overlays[overlayIndex]}}.png">
+
+
+   </div>
+
+
+    <style>
+      :host{
+
+        background-color:black;
+
+
+      }
+
+      #overlay {
+
+        display:block;
+        width:100%;
+        height:auto;
+      }
+
+    </style>
+  </template>
+
+  <script src="app-main.js">
+
+  </script>
+</polymer-element>

@@ -8,6 +8,8 @@
   "private": true,
   "dependencies": {
     "polymer": "Polymer/polymer#master",
-    "paper-elements": "Polymer/paper-fab#master"
+    "paper-elements": "Polymer/paper-elements#master",
+    "paper-elements": "Polymer/core-icons#master",
+    "video-webcam":"brycethorup/video-webcam#master"
   }
 }
